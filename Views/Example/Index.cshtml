@@ -1,0 +1,27 @@
+@model ExampleMVC.Models.ExampleNodeInfo
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Example Node Info</h2>
+
+@{
+    if (Model.Message != "")
+    {
+        <h3>@Model.Message</h3>
+    }
+}
+
+<div>
+    <h4>Basic Wallet Info</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Balance)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Balance)
+        </dd>
+    </dl>
+</div>

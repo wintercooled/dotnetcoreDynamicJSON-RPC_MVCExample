@@ -34,3 +34,7 @@ dotnet run
 ```
 
 Browse to https://localhost:5001/Example
+
+## Tidying up
+
+You can go through and remove the HomeController and associated views that dotnet created if you like. I've left them in so that this example code is not that different to the example given here for reference: https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app-xplat/start-mvc?view=aspnetcore-2.1
