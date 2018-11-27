@@ -1,3 +1,5 @@
+## A simple .NET Core MVC example using the [dotnetcoreDynamicJSON-RPC dynamic RPC wrapper](https://github.com/wintercooled/dotnetcoreDynamicJSON-RPC) class, which is intended to enable simple, dynamic wrapping of JSON RPC calls to Bitcoin, Elements, Liquid and other RPC enabled daemons.
+
 # Setting up and running the MVC example on Linux
 
 ## Install .Net Core 2.1 SDK
