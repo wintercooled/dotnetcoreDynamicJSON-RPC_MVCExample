@@ -45,7 +45,7 @@ Amend ExampleController.cs and set the rpc details needed to connect to your Bit
 dotnet run
 ```
 
-Browse to https://localhost:5001/Example
+Browse to https://localhost:5001/
 
 ## Tidying up
 
