@@ -8,13 +8,13 @@ Tested with [Bitcoin](https://github.com/bitcoin/bitcoin) (bitcoind) and [Elemen
 
 Will also work with a [Liquid](https://blockstream.com/liquid/) node.
 
-Please see the [dotnetcoreDynamicJSON-RPC dynamic RPC wrapper](https://github.com/wintercooled/dotnetcoreDynamicJSON-RPC) page on GitHub to learn how to use it and its JSON string helper classes in detail.
+Please see the [dotnetcoreDynamicJSON-RPC](https://github.com/wintercooled/dotnetcoreDynamicJSON-RPC) page on GitHub to learn how to use it and its JSON string helper classes in more detail.
 
 # Setting up and running the MVC example on Linux
 
 ## Install .Net Core 2.1 SDK
 
-Register Microsoft key and feed:
+Register the Microsoft key and feed by choosing the Linux distribution you are using from the [dotnet download site](https://dotnet.microsoft.com/download/linux-package-manager/ubuntu18-04/sdk-current). It will give you the code to run and will look similar to this:
 
 ```
 wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
@@ -49,4 +49,4 @@ Browse to https://localhost:5001/
 
 ## Tidying up
 
-You can go through and remove the extra views and controller actions (About, Contact etc.) that dotnet created if you like. I've left them in so that this example code is not that different to the example given here for reference: https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app-xplat/start-mvc?view=aspnetcore-2.1
+You can go through and remove the extra views and controller actions (About, Contact etc.) that dotnet created if you like. I've left them in so that this example code is not that different to that used by Microsoft in their [MVC tutorial](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app-xplat/start-mvc?view=aspnetcore-2.1).
