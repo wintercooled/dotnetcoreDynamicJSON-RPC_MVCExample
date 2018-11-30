@@ -14,8 +14,7 @@ namespace ExampleMVC.Controllers
     {
         public IActionResult Index()
         {
-            // We will be using an Elements node in this example. 
-            // It is easy to switch to use a Bitcoin, Liquid node.
+            // You can run this example against a Bitcoin, Elements or Liquid node as the 'getblockcount' RPC is found in all of them.
             // You need to change these to make sure you can authenticate against the daemon you are running:
             string rpcUrl = "http://localhost";
             string rpcPort = "18884";
@@ -35,14 +34,15 @@ namespace ExampleMVC.Controllers
             {
                 try
                 {
-                    // Get the JSON result of the 'getwalletinfo' RPC on the Elements node.
-                    string balance = dynamicRPC.getwalletinfo();
+                    // Get the JSON result of the 'getblockcount' RPC against the node.
+                    string blockCount = dynamicRPC.getblockcount();
 
-                    // Use the DotnetcoreDynamicJSONRPC 'GetProperty' string helper to return the property value we want.
-                    balance = balance.GetProperty("result.balance.bitcoin");
+                    // Populate the model by accessing the JSON 'result' data value using the DotnetcoreDynamicJSONRPC 
+                    // GetProperty string extension.
+                    nodeInfo.BlockCount = blockCount.GetProperty("result");
 
-                    // Populate the model
-                    nodeInfo.Balance = balance;
+                    // Refer to the DotnetcoreDynamicJSONRPC GitHub page for info on how its 3 string extension methods give access 
+                    // to the JSON data returned, without the need for complex classes to represent a block, list of transactions etc.
                 }
                 catch (Exception e)
                 {
