@@ -1,4 +1,4 @@
-# Goog luck getting this working after any .NET updates - I've adandoned .NET/MVC for Python/Flask now.
+# Good luck getting this working after any .NET updates - I've adandoned .NET/MVC for Python/Flask now.
 
 ## A simple .NET Core MVC example using the [dotnetcoreDynamicJSON-RPC](https://github.com/wintercooled/dotnetcoreDynamicJSON-RPC) dynamic RPC wrapper class, which is intended to enable simple, dynamic wrapping of JSON RPC calls to Bitcoin, Elements, Liquid and other RPC enabled daemons.
 
